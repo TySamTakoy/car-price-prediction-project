@@ -1,6 +1,6 @@
 package com.petprojects.carpricepredictionbackend.dto;
 
-import com.petprojects.car_price_prediction_backend.model.enums.*;
+import com.petprojects.carpricepredictionbackend.model.enums.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

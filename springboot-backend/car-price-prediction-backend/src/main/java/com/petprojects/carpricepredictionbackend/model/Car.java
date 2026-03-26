@@ -1,6 +1,6 @@
 package com.petprojects.carpricepredictionbackend.model;
 
-import com.petprojects.car_price_prediction_backend.model.enums.*;
+import com.petprojects.carpricepredictionbackend.model.enums.*;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

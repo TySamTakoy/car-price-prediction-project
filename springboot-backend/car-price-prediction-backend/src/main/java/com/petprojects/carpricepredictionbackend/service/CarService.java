@@ -1,8 +1,8 @@
 package com.petprojects.carpricepredictionbackend.service;
 
-import com.petprojects.car_price_prediction_backend.dto.CarRequestDTO;
-import com.petprojects.car_price_prediction_backend.model.Car;
-import com.petprojects.car_price_prediction_backend.repository.CarRepository;
+import com.petprojects.carpricepredictionbackend.dto.CarRequestDTO;
+import com.petprojects.carpricepredictionbackend.model.Car;
+import com.petprojects.carpricepredictionbackend.repository.CarRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

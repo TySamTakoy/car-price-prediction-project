@@ -1,7 +1,7 @@
 package com.petprojects.carpricepredictionbackend.controller;
 
-import com.petprojects.car_price_prediction_backend.dto.*;
-import com.petprojects.car_price_prediction_backend.service.AppraisalService;
+import com.petprojects.carpricepredictionbackend.dto.*;
+import com.petprojects.carpricepredictionbackend.service.AppraisalService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

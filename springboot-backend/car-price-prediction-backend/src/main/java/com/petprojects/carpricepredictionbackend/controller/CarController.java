@@ -1,7 +1,7 @@
 package com.petprojects.carpricepredictionbackend.controller;
 
-import com.petprojects.car_price_prediction_backend.dto.CarRequestDTO;
-import com.petprojects.car_price_prediction_backend.service.CarService;
+import com.petprojects.carpricepredictionbackend.dto.CarRequestDTO;
+import com.petprojects.carpricepredictionbackend.service.CarService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
