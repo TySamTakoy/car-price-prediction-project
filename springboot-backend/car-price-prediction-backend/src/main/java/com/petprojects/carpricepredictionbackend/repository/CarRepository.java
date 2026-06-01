@@ -1,6 +1,6 @@
-package com.petprojects.carpricepredictionbackend.repository;
+package com.petprojects.car_price_prediction_backend.repository;
 
-import com.petprojects.carpricepredictionbackend.model.Car;
+import com.petprojects.car_price_prediction_backend.model.Car;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
