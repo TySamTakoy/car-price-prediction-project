@@ -1,0 +1,177 @@
+version: "3.9"
+
+services:
+
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    environment:
+      POSTGRES_DB: car_appraisal
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  ml_service:
+    build: F:/python/ml_service
+    container_name: ml_service
+    ports:
+      - "8000:8000"
+    volumes:
+      - F:/python/ml_service/models:/app/models
+      - F:/python/ml_service/artifacts:/app/artifacts
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  cv_service_1:
+    build:
+      context: F:/python/cv-car-parts-detection-service
+      dockerfile: Dockerfile
+    image: car-price-project-cv_service_1
+    container_name: cv_service_1
+    ports:
+      - "8001:8001"
+    environment:
+      WEIGHTS_PATH: /app/weights/best.pt
+      CONF_THRESH: "0.35"
+      DEVICE: "cuda"
+      PORT: "8001"
+    volumes:
+      - F:/python/cv-car-parts-detection-service/weights:/app/weights
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    shm_size: 8g
+    #restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 30s
+      retries: 5
+
+  cv_service_2:
+    build:
+      context: F:/python/cv-car-damage-detection
+      dockerfile: Dockerfile
+    image: car-price-project-cv_service_2
+    container_name: cv_service_2
+    ports:
+      - "8002:8002"
+    environment:
+      CHECKPOINT_PATH: /app/checkpoints/best_model.pth
+      THRESHOLD: "0.5"
+      DEVICE: "cuda"
+      PORT: "8002"
+      NO_ALBUMENTATIONS_UPDATE: "1"
+    volumes:
+      - F:/python/cv-car-damage-detection/checkpoints:/app/checkpoints
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    shm_size: 4g
+    #restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8002/health"]
+      interval: 30s
+      timeout: 30s
+      retries: 5
+
+  ml_service_2:
+    build: F:/python/ml-car-price-correction
+    container_name: ml_service_2
+    ports:
+      - "8004:8004"
+    environment:
+      MODEL_PATH: /app/artifacts/lgbm_price_model_final.pkl
+      PORT: "8004"
+    volumes:
+      - F:/python/ml-car-price-correction/artifacts:/app/artifacts
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
+
+  orchestrator:
+    build: F:/python/cv-to-ml-orchestrator
+    container_name: orchestrator
+    ports:
+      - "8003:8003"
+    environment:
+      CV1_URL: http://cv_service_1:8001
+      CV2_URL: http://cv_service_2:8002
+      ML2_URL: http://ml_service_2:8004
+      BACKEND_URL: http://backend:8080
+      PORT: "8003"
+    volumes:
+      - uploads_data:/app/uploads
+    depends_on:
+      cv_service_1:
+        condition: service_healthy
+      cv_service_2:
+        condition: service_healthy
+      ml_service_2:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 15s
+      retries: 5
+    restart: unless-stopped
+
+  backend:
+    build: F:/java/pet-projects/springbootrestservice/car_price_prediction_backend/car_price_prediction_backend
+    container_name: backend
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/car_appraisal
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: postgres
+      ML_SERVICE_URL: http://ml_service:8000
+      ORCHESTRATOR_URL: http://orchestrator:8003
+      UPLOADS_DIR: /app/uploads
+    volumes:
+      - uploads_data:/app/uploads
+    depends_on:
+      postgres:
+        condition: service_healthy
+      ml_service:
+        condition: service_healthy
+      orchestrator:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build: F:/DEMO-maga-final-project/car-price-prediction-project/react-js-frontend
+    container_name: car_frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_started
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  uploads_data:
