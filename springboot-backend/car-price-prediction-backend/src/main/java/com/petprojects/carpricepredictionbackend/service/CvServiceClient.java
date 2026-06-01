@@ -1,7 +1,7 @@
-package com.petprojects.carpricepredictionbackend.service;
+package com.petprojects.car_price_prediction_backend.service;
 
-import com.petprojects.carpricepredictionbackend.dto.CvAnalysisRequest;
-import com.petprojects.carpricepredictionbackend.dto.CvAnalysisResponse;
+import com.petprojects.car_price_prediction_backend.dto.CvAnalysisRequest;
+import com.petprojects.car_price_prediction_backend.dto.CvAnalysisResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

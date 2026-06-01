@@ -1,7 +1,7 @@
-package com.petprojects.carpricepredictionbackend.service;
+package com.petprojects.car_price_prediction_backend.service;
 
-import com.petprojects.carpricepredictionbackend.dto.MlPredictionRequest;
-import com.petprojects.carpricepredictionbackend.dto.MlPredictionResponse;
+import com.petprojects.car_price_prediction_backend.dto.MlPredictionRequest;
+import com.petprojects.car_price_prediction_backend.dto.MlPredictionResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
