@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2fbc04fe-2022-4c0c-8893-fd9b5b3fee37" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FastAPI main" />
+        <option value="FastAPI test_main" />
+        <option value="Dockerfile" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="3C8nZ94LGma9iX2yHCJGT5Mxut1" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.test_request.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tobase64.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/PYTHON/cv-car-parts-detection-service/images&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\PYTHON\cv-car-parts-detection-service\images" />
+      <recent name="F:\PYTHON\cv-car-parts-detection-service\weights" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="cv-car-parts-detection-service" type="Python.FastAPI">
+      <option name="file" value="$PROJECT_DIR$/main.py" />
+      <module name="cv-car-parts-detection-service" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
+        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2fbc04fe-2022-4c0c-8893-fd9b5b3fee37" name="Changes" comment="" />
+      <created>1775776118312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775776118312</updated>
+      <workItem from="1775776119354" duration="2765000" />
+      <workItem from="1776099005958" duration="17000" />
+      <workItem from="1776102747620" duration="9000" />
+      <workItem from="1776102763888" duration="1015000" />
+      <workItem from="1776531631876" duration="24000" />
+      <workItem from="1776532568752" duration="34000" />
+      <workItem from="1776536387540" duration="199000" />
+      <workItem from="1776537973111" duration="39000" />
+      <workItem from="1776538034494" duration="1000" />
+      <workItem from="1776538939713" duration="264000" />
+      <workItem from="1776539421119" duration="31000" />
+      <workItem from="1776542123903" duration="58000" />
+      <workItem from="1776542248230" duration="25000" />
+      <workItem from="1776542454515" duration="35000" />
+      <workItem from="1776542514111" duration="195000" />
+      <workItem from="1776542848787" duration="710000" />
+      <workItem from="1776544674565" duration="206000" />
+      <workItem from="1776545287116" duration="168000" />
+      <workItem from="1776560200132" duration="142000" />
+      <workItem from="1776561116379" duration="21000" />
+      <workItem from="1776604731666" duration="129000" />
+      <workItem from="1776605813225" duration="26000" />
+      <workItem from="1776616002936" duration="122000" />
+      <workItem from="1779464461901" duration="290000" />
+      <workItem from="1780334946830" duration="182000" />
+      <workItem from="1780335227228" duration="108000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/cv_car_parts_detection_service$tobase64.coverage" NAME="tobase64 Coverage Results" MODIFIED="1775777103942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/images" />
+    <SUITE FILE_PATH="coverage/cv_car_parts_detection_service$test_request.coverage" NAME="test_request Coverage Results" MODIFIED="1775778736403" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
