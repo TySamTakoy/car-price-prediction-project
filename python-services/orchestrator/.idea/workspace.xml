@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="abf3bfc4-2ef5-4245-9a59-c6921bfe3e08" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FastAPI main" />
+        <option value="FastAPI test_main" />
+        <option value="Dockerfile" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="3CJLcIt79NwSXeTzsihUQwCxgZK" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="cv-to-ml-orchestrator" type="Python.FastAPI">
+      <option name="file" value="$PROJECT_DIR$/main.py" />
+      <module name="cv-to-ml-orchestrator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
+        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="abf3bfc4-2ef5-4245-9a59-c6921bfe3e08" name="Changes" comment="" />
+      <created>1776098803566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1776098803566</updated>
+      <workItem from="1776098804594" duration="1595000" />
+      <workItem from="1776102758492" duration="1157000" />
+      <workItem from="1776109817433" duration="1949000" />
+      <workItem from="1776161200795" duration="1884000" />
+      <workItem from="1776359871461" duration="33000" />
+      <workItem from="1776361653903" duration="2316000" />
+      <workItem from="1776377912937" duration="1045000" />
+      <workItem from="1776428243916" duration="1112000" />
+      <workItem from="1776530731094" duration="1000" />
+      <workItem from="1776531549312" duration="24000" />
+      <workItem from="1776535045702" duration="670000" />
+      <workItem from="1776536376364" duration="10000" />
+      <workItem from="1776542274777" duration="176000" />
+      <workItem from="1776542712288" duration="134000" />
+      <workItem from="1776605840709" duration="65000" />
+      <workItem from="1776605918686" duration="19000" />
+      <workItem from="1776615866090" duration="29000" />
+      <workItem from="1776616180080" duration="637000" />
+      <workItem from="1778690556612" duration="763000" />
+      <workItem from="1778702758061" duration="598000" />
+      <workItem from="1778778765083" duration="227000" />
+      <workItem from="1778958063019" duration="387000" />
+      <workItem from="1778963015270" duration="2213000" />
+      <workItem from="1779297781667" duration="18000" />
+      <workItem from="1779462469974" duration="605000" />
+      <workItem from="1780335132009" duration="93000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
