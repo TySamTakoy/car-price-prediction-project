@@ -1,10 +1,7 @@
-package com.petprojects.carpricepredictionbackend.dto;
+package com.petprojects.car_price_prediction_backend.dto;
 
-import com.petprojects.carpricepredictionbackend.model.enums.*;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
+import com.petprojects.car_price_prediction_backend.model.enums.*;
+import jakarta.validation.constraints.*;
 import lombok.Data;
 
 @Data
@@ -18,7 +15,7 @@ public class CarRequestDTO {
 
     private String generation;
 
-    @Min(1990) @Max(2025)
+    @Min(1990) @Max(2026)
     private int year;
 
     @Min(0)

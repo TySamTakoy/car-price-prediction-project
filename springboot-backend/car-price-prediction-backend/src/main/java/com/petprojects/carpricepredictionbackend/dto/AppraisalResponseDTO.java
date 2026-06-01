@@ -1,8 +1,7 @@
-package com.petprojects.carpricepredictionbackend.dto;
+package com.petprojects.car_price_prediction_backend.dto;
 
 import lombok.Builder;
 import lombok.Data;
-
 import java.math.BigDecimal;
 import java.util.List;
 
