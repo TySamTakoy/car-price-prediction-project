@@ -1,12 +1,8 @@
-package com.petprojects.carpricepredictionbackend.model;
+package com.petprojects.car_price_prediction_backend.model;
 
-import com.petprojects.carpricepredictionbackend.model.enums.*;
+import com.petprojects.car_price_prediction_backend.model.enums.*;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
+import lombok.*;
 import java.time.LocalDateTime;
 
 @Entity
