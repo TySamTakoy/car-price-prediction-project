@@ -1,7 +1,7 @@
-package com.petprojects.carpricepredictionbackend.model.enums;
+package com.petprojects.car_price_prediction_backend.model.enums;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonValue;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
 public enum EngineType {
     PETROL("Бензин"),
